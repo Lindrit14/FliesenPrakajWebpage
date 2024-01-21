@@ -20,8 +20,9 @@ function App() {
         <Divider />
         <About />
         <Divider />
-        <Projects />
         <Services />
+        <Projects />
+
         <Testimonials />
         <Contact />
         <Footer />

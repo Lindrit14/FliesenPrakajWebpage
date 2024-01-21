@@ -1,9 +1,9 @@
 const images = [
-  { src: "public/poolfliesen.png", alt: "Pool Fliesen" },
-  { src: "public/aussengartenfliesen.png", alt: "Außen Garten Fliesen" },
-  { src: "public/Fliesen-Grau.jpg", alt: "Fliesen Grau" },
-  { src: "public/holzoptikfliesen.jpg", alt: "Holzoptik Fliesen" },
-  { src: "public/badezimmer beige.jpg", alt: "Badezimmer Beige" },
+  { src: "/poolfliesen.png", alt: "Pool Fliesen" },
+  { src: "/aussengartenfliesen.png", alt: "Außen Garten Fliesen" },
+  { src: "/Fliesen-Grau.jpg", alt: "Fliesen Grau" },
+  { src: "/holzoptikfliesen.jpg", alt: "Holzoptik Fliesen" },
+  { src: "/badezimmer beige.jpg", alt: "Badezimmer Beige" },
 ];
 
 const Hero = () => {

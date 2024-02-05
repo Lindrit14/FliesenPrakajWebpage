@@ -23,12 +23,15 @@ const Services = () => {
     >
       <div
         id="outerService"
-        className="h-full flex items-center justify-center"
+        className="h-full flex items-center justify-center  "
       >
         <div
           id="left-picture"
-          className="w-1/2 flex flex-col gap-12 justify-center items-center h-1/2    "
+          className="w-1/2 flex flex-col gap-12 justify-center items-center h-1/2"
         >
+          <div id="title">
+            <h1 className="">Unsere Leistungen</h1>
+          </div>
           <Cards
             icon={faClone}
             text={"Fliesenverlegung"}
@@ -66,7 +69,7 @@ const Services = () => {
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam consequuntur nemo esse consequatur velit? Dolores aperiam consequuntur nemo esse consequatur velit?Dolores aperiam consequuntur nemo esse consequatur velit?Dolores aperiam consequuntur nemo esse consequatur velit?"
             }
-            color={"bg-wood-700"}
+            color={"bg-pearl-800"}
             srcImage={"/Fliesenverlegen1.jpg"}
           />
         )}

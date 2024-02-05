@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// eslint-disable-next-line react/prop-types
 function ServiceDisplay({ title, text, color, srcImage }) {
   const textRef = useRef(null);
   const pictureRef = useRef(null);
@@ -21,7 +22,6 @@ function ServiceDisplay({ title, text, color, srcImage }) {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }
@@ -40,9 +40,8 @@ function ServiceDisplay({ title, text, color, srcImage }) {
         delay: 1.5,
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",
+          start: "top 90%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }
@@ -63,7 +62,6 @@ function ServiceDisplay({ title, text, color, srcImage }) {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }

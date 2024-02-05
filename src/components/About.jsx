@@ -24,7 +24,6 @@ function About() {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }
@@ -45,7 +44,6 @@ function About() {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }
@@ -65,7 +63,6 @@ function About() {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }
@@ -85,7 +82,6 @@ function About() {
           trigger: el,
           start: "top 80%",
           end: "top 50%",
-          markers: true,
           toggleActions: "play none none none",
         },
       }

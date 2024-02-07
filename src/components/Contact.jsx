@@ -30,27 +30,44 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-3/4 h-screen bg-concrete-50">
-      <div className="flex h-3/4 bg-pearl-500 ">
-        <div id="left-side-text" className="w-1/2">
-          <h1>Fragen Sie ihr individuelles Angebot an!</h1>
-          <p>Lassen Sie uns wissen, wie wir...</p>
-
+    <section className="w-3/4 h-screen bg-concrete-50 relative">
+      <div className="flex h-3/4   ">
+        <div id="left-side-text" className="w-3/5 flex flex-col justify-center itmes-center p-10 gap-16   ">
+          <div>
+          <h1 className="text-4xl text-pretty">Fragen Sie Ihr individuelles Angebot an!</h1>
+          <p className="text-lg text-pretty pr-16"> Ihr Projekt ist uns wichtig! Haben Sie Fragen, benötigen Sie ein individuelles Angebot oder möchten Sie einfach nur Hallo sagen? 
+          Unser Team freut sich auf Ihre Nachricht!</p>
+          </div>
+          <div id="avatar-group" className="flex gap-4">
+          <div id="Avatar-Name" className="">
           <div className="avatar">
-            <div className="w-24 rounded-full">
+            <div className="w-16 rounded-full">
               <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
             </div>
           </div>
+          <p>Ramiz </p>
+          <p>Inhaber</p>
+          </div>
+          <div id="Avatar-Name" className="">
+          <div className="avatar">
+            <div className="w-16 rounded-full">
+              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <p>Flamur </p>
+          <p>Facharbeiter</p>
+          </div>
+          </div>
         </div>
-        <div className="w-1/2">
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col">
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
+        <div className="w-2/5  flex bg-concrete-600  absolute bottom-20 right-20 ">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full gap-3 p-5   ">
+            
+            <input type="text" name="user_name" placeholder="Mustermann" className="min-w-full bg-concord-50 " />
+            
+            <input type="email" name="user_email" placeholder="example@email.com" className="min-w-full bg-concord-50" />
+            
+            <textarea name="message" placeholder="Hallo..." className="min-w-full min-h-64 max-h-64 overscroll-auto bg-concord-50"   />
+            <button type="submit" className="btn rounded-none">Anfrage senden</button>
           </form>
           {alert.show && (
             <div
@@ -85,7 +102,9 @@ const Contact = () => {
           )}
         </div>
       </div>
-      <div className="h-1/4 bg-coral-500"></div>
+      <div className="h-1/4 bg-coral-500  ">
+        <img className="h-full w-full object-cover" src="https://www.villeroy-boch.de/fileadmin/upload/fliesen/images/Bilder_Redesign_-_EVB/960x400/URBAN_JUNGLE_OUTDOOR20_1_PALMEN.jpg" alt="" />
+      </div>
     </section>
   );
 };
